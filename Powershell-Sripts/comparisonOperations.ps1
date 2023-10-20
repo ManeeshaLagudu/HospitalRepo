@@ -1,11 +1,11 @@
-$a =100
-$b = 200
+$number1 =100
+$number2 = 200
 # Performing comparison between variables
-$a -eq $b # this returns boolean value for checking equality
-$a -ne $b # not equal or equal
-$a -ge $b # greater that or equal to
-$a -gt $b #greater than
-$a -lt $b #less than
+$number1 -eq $number2 # this returns boolean value for checking equality
+$number1 -ne $number2 # not equal or equal
+$number1 -ge $number2 # greater that or equal to
+$number1 -gt $number2 #greater than
+$number1 -lt $number2 #less than
 
 # for comparing strings
 $name = 'Apple'
