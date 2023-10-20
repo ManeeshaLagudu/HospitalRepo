@@ -1,13 +1,13 @@
-$a = 100  # initializing variable a
-$b = 200 
+$number1 = 100  # initializing variable a
+$number2 = 200 
 # mathematical operations between variables
-$a + $b 
-$a - $b
-$a * $b
-$a % $b
+$number1 + $number2 
+$number1 - $number2
+$number1 * $number2
+$number1 % $number2
 # Manipulating the values of variable
-$a=300
-$a
+$number1=300
+$number1
 # Storing strings in variables
 $name = 'Maneesha' # strings can be stored either in single-quotes or double-quotes
 $wish = "Hii"
