@@ -6,7 +6,7 @@ $number1 - $number2
 $number1 * $number2
 $number1 % $number2
 # Manipulating the values of variable
-$number1=300
+$number1 = 300
 $number1
 # Storing strings in variables
 $name = 'Maneesha' # strings can be stored either in single-quotes or double-quotes
