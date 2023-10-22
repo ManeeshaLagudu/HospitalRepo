@@ -66,15 +66,15 @@ $Blank_HashTable
 $Blank_HashTable.Clear() # Using this clear method we can make HashTable empty
 $Blank_HashTable
 # Renaming color/ Propoerty names as per our need
-$Updated_HashTable=$HashTable | Format-Table @{name="User";expression={$_.name}},@{name="Age";expression={$_.value}} # With this we can rename the names of columns to our desired values 
+$Updated_HashTable = $HashTable | Format-Table @{name = "User"; expression = { $_.name } }, @{name = "Age"; expression = { $_.value } } # With this we can rename the names of columns to our desired values 
 $Updated_HashTable
 # Using Splatting to pass a collection of parameter values to a command as a unit 
 New-item -Path "C:\Users\PS" -Name MyFile.txt -ItemType file -Value "These are my text contents" -Force -ErrorAction Stop # This is the conventional of creating a file
 # This file has been created using splatting where all the parameters will be taken same only the name of the file has changed 
 $Creating_File = @{
-    Path ="C:\Users\PS"
-    ItemType ="file"
-    Value ="These are my text contents"
+    Path        = "C:\Users\PS"
+    ItemType    = "file"
+    Value       = "These are my text contents"
     ErrorAction = "Stop"
 }
 New-Item -Force -Name "File2.txt" @Creating_File
@@ -87,11 +87,11 @@ $HashTable | Export-Csv .\exportedHT.csv -NoTypeInformation
 Get-Content .\exportedHT.csv
 # Creating HashTable with keys as column name
 # Using a PSCustomObject is to have a simple way to create structured data
-$Citizen=[PSCustomObject]@{
-    Name = "Maneesha"
-    Age=22
-    City="Mumbai"
-    Country="India"
+$Citizen = [PSCustomObject]@{
+    Name    = "Maneesha"
+    Age     = 22
+    City    = "Mumbai"
+    Country = "India"
 }
 $Citizen
 # By adding Key-Value pairs as members of HashTable
