@@ -49,15 +49,22 @@ $Place_Name.Count # count is alias for length
 
 # clear method removes all the elements in the array but it doesn't remove the i.e, array size remains same 
 $Numbers.Clear()
-
+# Iterating through elements of Array
+$Numbers=(1..12)
+foreach ($number in $Numbers)
+{$Number * 4}
+Write-Host "---------"
+for($i = 0;$i -le $Numbers.Count;$i++)
+{$Numbers[$i] * 5}
+Write-Host "---------"
 # ForEach Method
 $Numbers = 1..10
 $Numbers.ForEach({ $_ * 2 }) # $_ represents the current object
-
+Write-Host "---------"
 $fruits.ForEach("ToUpper") # Converts all the elements in the fruits array to uppercase
 Write-Host "---------"
 $Place_Name.ForEach("ToLower") # Converts all the elements in the place_name array to lower case
-
+Write-Host "---------"
 # Where method used for filtering or select elements from array
 $Numbers.where({ $_ -lt 8 }) # this gives all the elements less than 8 from numbers array
 Write-Host "---------"
@@ -75,5 +82,5 @@ Write-Host "---------"
 # Manipulating the array
 $Place_Name += "Kashmir" # Adding element to the array
 $Place_Name[-1] = "Meghalaya" # This changes the last element of Array 
-$Place_Name.SetValue("Karnataka",4)
+$Place_Name.SetValue("Karnataka",4) # The element present at the index[4] replaces with the given string
 $Place_Name
