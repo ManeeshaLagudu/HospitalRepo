@@ -35,5 +35,5 @@ Write-Host "-------------"
 # for loops runs till te specified condition becomes true
 for ($i = 0; $Number -lt 8; $i++) { Write-Host "$Number" }
 # Infinite loop
-$Number1=0
-for(;;){$Number1;$Number1++}
+$Number1 = 0
+for (; ; ) { $Number1; $Number1++ }
