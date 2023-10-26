@@ -4,7 +4,6 @@ Bitwise operators
 Logical operators
 Assignment operators
 Ternary operators
-Logical operators
 */
 
 //Arithmetic operators 

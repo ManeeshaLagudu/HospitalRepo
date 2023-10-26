@@ -1,5 +1,4 @@
 // Usage of for loop
-
 numbers = (1..10) // It gives the numbers from 1 to 10
 for (int iteration = 1; iteration <= 5; iteration++){
     println(iteration)
