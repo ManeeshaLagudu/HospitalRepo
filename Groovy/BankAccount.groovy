@@ -21,5 +21,4 @@ class BankAccount{
     double displayBalance (){
         return accountBalance
     }
-
 }

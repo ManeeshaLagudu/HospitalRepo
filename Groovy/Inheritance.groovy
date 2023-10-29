@@ -1,16 +1,10 @@
-class CarMain {
-    static main(args) {
-        Car car = new Car("Alto","Maruti",5,"White")
-        def float calculatedMileage = car.mileageCalculator(22.3 , 1.2)
-        println(car.carInfo())
-    }
-}
+package Groovy
 class Vehicle{
     String nameOfVehicle
     String brandingCompanyName
     float mileage
     Vehicle(String nameOfVehicle,String brandingCompanyName){
-         this.nameOfVehicle = nameOfVehicle
+        this.nameOfVehicle = nameOfVehicle
         this.brandingCompanyName = brandingCompanyName
     }
     def mileageCalculator(float distanceTravelled , float fuelConsumed){
@@ -30,5 +24,12 @@ class Car extends Vehicle{
     }
     String carInfo(){
         return "${vehicleInfo()} , Seats: $totalNoOfSeats , Color: $colorOfCar"
+    }
+}
+class CarMain {
+    static main(args) {
+        Car car = new Car("Alto","Maruti",5,"White")
+        def float calculatedMileage = car.mileageCalculator(22.3 , 1.2)
+        println(car.carInfo())
     }
 }

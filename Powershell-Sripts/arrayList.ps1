@@ -13,5 +13,5 @@ Write-Host "---------"
 $Fruits.Add("Pear") # Add element to the Array at the end
 $Fruits
 Write-Host "---------"
-$Fruits.Insert(0,"Dragon-fruit") # To add element at specific index
+$Fruits.Insert(5,"Dragon-fruit") # To add element at specific index
 $Fruits
