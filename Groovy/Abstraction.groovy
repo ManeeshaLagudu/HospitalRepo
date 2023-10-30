@@ -23,8 +23,6 @@ class AtmMain {
 }
 // Abstract class representing ATM functionality
 abstract class ATM {
-    // double accountBalance 
-    // int pin 
     abstract double checkAccountBalance()
     abstract String providePin(int pin)
     abstract String resetPin(int oldPin, int newPin)
