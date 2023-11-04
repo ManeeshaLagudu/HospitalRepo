@@ -1,2 +1,13 @@
 // Using simple print statement for printing output
-println "Hello World!!!!!!"
+class Some{
+    static main(args) {
+        Some s = new Some()
+        s.someFunction()
+    }
+    def someFunction() {
+    println "Hello World!!!!!!"
+}
+
+}
+
+

@@ -1,5 +1,5 @@
 import Groovy.Methods
-class Testing{
+class MethodsMain{
 static main(args) {
     Methods object=new Methods();
     println ("Addition:" +object.additionOfNumbers(4,4))

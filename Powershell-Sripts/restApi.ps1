@@ -25,7 +25,7 @@ function Get-WeekendCountExcludingHolidays {
     }
     return $weekendCount
 }
- 
+  
 function Get-WorkingDays {
     param (
         [int]$year
